@@ -1,0 +1,41 @@
+{
+  "name": "genpark-inter-agent-handshake-negotiator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Protocol schema negotiator and capability handshake engine ensuring secure interoperability between heterogeneous agents.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "multi-agent-protocols",
+  "tags": [
+    "agent-handshake",
+    "inter-agent-protocol",
+    "capability-negotiation",
+    "mcp-handshake",
+    "heterogeneous-agents"
+  ],
+  "inputs": {
+    "initiator_agent_id": {
+      "type": "string",
+      "default": "agent_orchestrator_alphapark"
+    },
+    "peer_agent_id": {
+      "type": "string",
+      "default": "agent_external_auditor_node"
+    }
+  },
+  "outputs": {
+    "handshake_id": {
+      "type": "string"
+    },
+    "handshake_established": {
+      "type": "boolean"
+    },
+    "compatibility_score": {
+      "type": "number"
+    },
+    "status_directive": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
